@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseAI | Smart Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="nav">
+        <div class="logo">Pulse<span>AI</span></div>
+        <button class="btn-primary-sm">Get Started</button>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="announcement">🚀 Next-gen Dashboard is here</div>
+            <h1>Automate Your Workflow with <span class="purple-gradient">Precision.</span></h1>
+            <p>PulseAI helps you track real-time data analytics with zero lag. Built for modern teams.</p>
+            
+            <div class="hero-btns">
+                <button class="btn-main">Start Free Trial</button>
+                <button class="btn-outline">Documentation</button>
+            </div>
+        </div>
+
+        <div class="dashboard-preview">
+            <div class="glass-box">
+                <div class="box-header">
+                    <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+                </div>
+                <div class="box-body">
+                    <div class="line long"></div>
+                    <div class="line med"></div>
+                    <div class="stats-row">
+                        <div class="stat-circle"></div>
+                        <div class="stat-lines">
+                            <div class="line"></div>
+                            <div class="line short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const glow = document.querySelector('.cursor-glow');
+        document.addEventListener('mousemove', (e) => {
+            glow.style.left = e.pageX + 'px';
+            glow.style.top = e.pageY + 'px';
+        });
+    </script>
+</body>
+</html>
